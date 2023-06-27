@@ -1,4 +1,4 @@
-# Story 2 images
+# Story2imgs
 
 ### <b> strcture <b>
 
@@ -16,5 +16,5 @@
 ### <b> compile proto <b>
     pip install protobuf
     cd ./model_grpc
-    protoc --python_out=.. model_server.proto 
+    python -m grpc_tools.protoc -I --python_out=. --grpc_python_out=. model_server.proto
     # also need to compile model_server_pb2_grpc.py       
